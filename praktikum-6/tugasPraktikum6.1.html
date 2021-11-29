@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.1</title>
+    <head>
+       <style>
+           *{
+                box-sizing: border-box;
+           }
+            #container {
+                display: flex;
+                justify-content: center ; 
+                padding : 3em;
+                margin: 0;
+            }
+            #box1 {
+                flex-wrap: wrap;
+                flex-direction: row; 
+                justify-content: space-around;
+            }
+            img{
+                border: 2px solid black;
+            }
+            #box2{
+                flex-wrap: wrap;
+                flex-direction: row; 
+           }
+       </style> 
+    </head>
+    <body>
+        <div id="container">
+            <div class="box1">
+              <img src="img/bc.jpg" alt="foto" width="350px">
+              <img src="img/london2.jpeg" alt="foto" width="350px">
+              <img src="img/lego.png" alt="foto" width="350px">
+            </div>
+        </div>
+        <div id="container">
+            <div class="box2">
+                <img src="img/london1.jpg" alt="foto" width="220px">
+                <img src="img/nails.png" alt="foto" width="195px">
+                <img src="img/nganjuk.jpg" alt="foto" width="195px">
+                <img src="img/zendaya.jpg" alt="foto" width="195px">
+                <img src="img/kopi.png" alt="foto" width="199px">
+            </div>
+        </div>
+    </body>
+</html>
