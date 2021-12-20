@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBox</title>
+    <style>
+        body {
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 308px;
+            margin-left: auto;
+        }
+        #pesan {
+            position: absolute;
+            width: 489px;
+            height: 20px;
+            bottom: 0px;
+        }
+        button {
+            position: absolute;
+            width: 50px;
+            height: 25px;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hasil"></div>
+    <input type="text" id="pesan" placeholder="Tulis pesan..." onchange="kirim()">
+    <button onclick="kirim()">Kirim</button>
+
+    <script>
+        let masukan = document.getElementById("pesan")
+        let hasil = document.getElementById("hasil")
+        let penampung = ""
+
+        function kirim() {
+            penampung += masukan.value + "<br>"
+            hasil.innerHTML = penampung
+            masukan.value = ""
+        }
+    </script>
+</body>
+
+</html>
